@@ -1,1 +1,34 @@
-<script src="u.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bild einfügen</title>
+	<style>
+		#play-button {
+			position: absolute;
+			top: 100px;
+			left: 50px;
+			width: 500px;
+			height: 300px;
+		}
+	</style>
+</head>
+<body>
+	<img src="https://i.imgur.com/8I5eMjM.png" id="play-button">
+</body>
+</html>
+<script>
+		// Finde das Bild-Element mit der ID "play-button"
+		var playButton = document.getElementById("play-button");
+
+		// Füge einen "mouseover"-Event-Listener hinzu
+		playButton.addEventListener("mouseover", function() {
+			// Verstecke das Bild, wenn die Maus darüber schwebt
+			playButton.style.display = "none";
+		});
+	</script>
+</body>
+</html>
+
+In diesem Beispiel wird das Bild mit der ID "play-button" zunächst normal angezeigt. Dann wird in JavaScript ein Event-Listener hinzugefügt, der auf das "mouseover"-Event reagiert, wenn die Maus über das Bild schwebt. Im Event-Listener wird dann einfach die "display"-Eigenschaft des Bildes auf "none" gesetzt, um es auszublenden.
+
+
